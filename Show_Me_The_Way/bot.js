@@ -7,8 +7,6 @@ bot.on('ready', () => {
     console.log("Bot ready !");
 });
 
-bot.login(token);
-
 bot.on('ready', function (){
   bot.user.setActivity('faire le bot').catch(console.error);
 })
