@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var token = ("NDQxMzIxNzA1MDAwOTI3MjYy.DcvAdg.lSGzzUJ_Aw_0o5-xRo5jtgbGr-s");
 var prefix = ("/");
 
 bot.on('ready', () => {
@@ -95,6 +94,9 @@ bot.on('message', function (message){
       message.channel.send(cadreHelp);
   }
 })
+
+client.login(process.env.token);
+
 /** 
 switch (arg[0].toLowerCase()){
   case "kick":
