@@ -85,6 +85,13 @@ bot.on('message', function (message){
       message.channel.send(cadreHelp);
   }
 
+  if (message.content === prefix + "new"){
+    var cadreRaid = new Discord.RichEmbed()
+      .setColor("#FF00FF")
+      .addField("Message pour les nouveaux", "Bienvenue dans le guilde Show Me The Way !\nJe te souhaite la bienvenue parmi nous.\nJe suis très content de t'accueillir aujourd'hui et j'espère que tu te plairas ici !\nN'hésite pas à me solliciter si tu as besoin de quoi que ce soit, je me ferai un plaisir de t'apporter mon aide, après tout je suis le bot de la guilde :grinning: \nFait " + prefix + "help dans un canal pour connaître les commandes disponibles.\nJe te prie d'aller remplir le google doc de la guilde, le lien est juste là : https://docs.google.com/spreadsheets/d/1yZMqrtGwpJmDNbMeB4555Bq_3Bw0SK6pUCrLrS4f61k/edit#gid=0")
+    message.channel.send(cadreRaid);
+  }
+
   if ((message.content === prefix + "help") || (message.content === prefix + "commande") || (message.content === prefix + "commandes")){
     var cadreHelp = new Discord.RichEmbed()
       .setColor("#723AE2")
