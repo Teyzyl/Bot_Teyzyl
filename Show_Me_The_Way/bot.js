@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 var prefix = ("/");
+var tableauBlague = ['Sébastien', 'Laurence', 'Ludovic', 'Pauline', 'Guillaume'];
 
 bot.on('ready', () => {
     console.log("Bot ready !");
@@ -13,7 +14,7 @@ bot.on('ready', function (){
 
 bot.on('guildMemberAdd', function (membre){
   membre.createDM().then(function (channel) {
-    channel.send("Bienvenue dans le guilde Show Me The Way !\nJe te souhaite la bienvenue parmi nous.\nJe suis très content de t'accueillir aujourd'hui et j'espère que tu te plairas ici !\nN'hésite pas à me solliciter si tu as besoin de quoi que ce soit, je me ferai un plaisir de t'apporter mon aide, après tout je suis le bot de la guilde :grinning: \nFais " + prefix + "help dans un canal pour connaître les commandes disponibles.\nJe te prie d'aller remplir le google doc de la guilde, le lien est juste là : https://docs.google.com/spreadsheets/d/1yZMqrtGwpJmDNbMeB4555Bq_3Bw0SK6pUCrLrS4f61k/edit#gid=0");
+    channel.send("Bienvenue dans le guilde Show Me The Way !\nJe te souhaite la bienvenue parmi nous.\nJe suis très content de t'accueillir aujourd'hui et j'espère que tu te plairas ici !\nN'hésite pas à me solliciter si tu as besoin de quoi que ce soit, je me ferai un plaisir de t'apporter mon aide, après tout je suis le bot de la guilde :grinning: \nFait " + prefix + "help dans un canal pour connaître les commandes disponibles.\nJe te prie d'aller remplir le google doc de la guilde, le lien est juste là : https://docs.google.com/spreadsheets/d/1yZMqrtGwpJmDNbMeB4555Bq_3Bw0SK6pUCrLrS4f61k/edit#gid=0");
   }).catch(console.error)
     //membre.addRole("Recrue","Nouveau dans la guilde").catch(console.error);
 })
@@ -83,6 +84,19 @@ bot.on('message', function (message){
       .addField("Prime","Site anglais Dulfy (Bounty Guild Mission) : http://dulfy.net/2013/02/27/gw2-guild-bounty-guide/\nSite francais Le Bus Magique : http://www.lebusmagique.fr/pages/expeditions/missions-de-guilde/primes-de-guilde.html")
       .addField("Randonné","Site anglais Dulfy (Trek Guild Mission) : http://dulfy.net/2013/03/03/gw2-guild-trek-guild-mission-guide/\nSite francais Le Bus Magique : http://www.lebusmagique.fr/pages/expeditions/missions-de-guilde/les-randonnees-de-guilde.html")
       message.channel.send(cadreHelp);
+  }
+
+  if (message.content === prefix + "blague"){
+    var cadreJoke = new Discord.RichEmbed()
+      .setColor("#FF00FF")
+      .addField(tableauBlague(random))
+    message.channel.send(cadreJoke);
+  }
+
+  function random(min, max){
+    min = Math.ceil(0);
+    max = Math.floor(tableauBlague.length - 1);
+    randnum = Math.floor(Math.random() * (max - min + 1) + min);
   }
 
   if ((message.content === prefix + "help") || (message.content === prefix + "commande") || (message.content === prefix + "commandes")){
