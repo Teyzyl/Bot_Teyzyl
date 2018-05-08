@@ -86,17 +86,17 @@ bot.on('message', function (message){
       message.channel.send(cadreHelp);
   }
 
-  if (message.content === prefix + "blague"){
-    var cadreJoke = new Discord.RichEmbed()
-      .setColor("#FF00FF")
-      .addField(tableauBlague[random])
-    message.channel.send(cadreJoke);
-  }
-
   function random(min, max){
     min = Math.ceil(0);
     max = Math.floor(tableauBlague.length - 1);
     randnum = Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+  if (message.content === prefix + "blague"){
+    var cadreJoke = new Discord.RichEmbed()
+      .setColor("#FF00FF")
+      .addField("Blague",tableauBlague[random])
+    message.channel.send(cadreJoke);
   }
 
   if ((message.content === prefix + "help") || (message.content === prefix + "commande") || (message.content === prefix + "commandes")){
