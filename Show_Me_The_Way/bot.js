@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 var prefix = ("/");
-var tableauBlague = ['Sébastien', 'Laurence', 'Ludovic', 'Pauline', 'Guillaume'];
+var tableauBlague = new Array('Sébastien', 'Laurence', 'Ludovic', 'Pauline', 'Guillaume');
 
 bot.on('ready', () => {
     console.log("Bot ready !");
