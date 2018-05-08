@@ -89,13 +89,13 @@ bot.on('message', function (message){
 
   function random(min, max){
     min = Math.ceil(0);
-    max = Math.floor(tableauBlague.length);
+    max = Math.floor(tableauBlague.length-1);
     randnum = Math.floor(Math.random() * (max - min + 1) + min);
   }
 
   function randum(min, max){
     min = Math.ceil(0);
-    max = Math.floor(tableauJoke.length);
+    max = Math.floor(tableauJoke.length-1);
     randjoke = Math.floor(Math.random() * (max - min + 1) + min);
   }
 
