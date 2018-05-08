@@ -89,7 +89,7 @@ bot.on('message', function (message){
   if (message.content === prefix + "blague"){
     var cadreJoke = new Discord.RichEmbed()
       .setColor("#FF00FF")
-      .addField(tableauBlague(random))
+      .addField(tableauBlague[random])
     message.channel.send(cadreJoke);
   }
 
