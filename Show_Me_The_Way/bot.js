@@ -3,7 +3,44 @@ const bot = new Discord.Client();
 
 var prefix = ("/");
 var tableauJoke = new Array("C'est la meilleur blague du monde !", "Celle-ci est pas mal", "En vrai elle est pas super mais rigole", "Je l'adore celle la", "Obligé tu va rire :wink:" );
-var tableauBlague = new Array("Tu connais la différence entre un micro-ondes et un cecoya ?\nNon ? Moi non plus.", "Qu'est-ce qui fait toin toin ?\nUn tanard", "Où est fabriqué le viagra ?\nAu boukistan", "Que font les dinosaures quand ils n'arrivent pas à ce mettre d'accord ?\nUn tiragosaure", "C'est un gars qui est tellement petit que sa tête elle pu des pieds", "C'est un hiboux qui rentre dans une casserole et du coup il bout", "Pourquoi mettons une selle sur un cheval ?\nParce que sinon on tombe", "Qu'est-ce qui est transparent et qui cours dans un champ ?\nTroupeau de vitre", "Quel est le meilleur moyen de contraception ?\nÊtre moche", " C'est l'histoire d'un prêtre qui rentre dans un enfant", "C'est 2 gros qui sont sur un bateau du coup le bateau il coule", "Qu'est-ce qu'un hamster dans l'espace ?\nUn hamsteroide", "J'ai reçu un coup de téléphone hier, ça a fait mal", "C'est l'histoire d'une fleur qui court, puis qu'il se plante", "La dernière fois j'ai fais une blague sur les paraplégique mais ça a pas bien marché", "Tu sais pourquoi les États-Unis peuvent pas jouer au échecs ?\n Ils leur manque 2 tours", "Tu sais pourquoi Harry Potter est classé comme film fantastique ?\nParce que le roux à des amis", "Tu sais c'est quoi la différence entre un melon et un bébé ?\n L'un est facile à coupé et est bon en bouche alors que l'autre est un fruit", "Qu'est-ce qui a 4 pattes et 1 bras ?\nUn pitbull dans un jardin d'enfant ", "Tu sais pourquoi les Tyrannosaures tape pas dans leur main ?\nParce qu'ils sont morts", "Tu sais c'est quoi la différence entre un thermomètre rectal et oral ?\nLe goût", "Je pensais pas pouvoir aller dans une union soviétique, mais finalement j'ai Russie", "Simon n'a pas de bras.\nToc toc ?\nQui est là ?\nPas Simon", "Qu'est-ce que dit Frodon devant sa maison ?\nC'est la que j'hobbit", "Comment on appel un boomerang qui reviens pas ?\nUn bâton", "Comment faire aboyer un chat ?\nUn briquet, de l'essence et WOUF", "Qu'est-ce qui n'est pas un steak ?\nUne pastèque", "Que dit une fraise sur un cheval ?\nTagada Tagada", "Que dit un poussin de 500kg ?\n**PIOU PIOU**", "Que dit un médecin a une crevette avant de la diagnostiquer ?\nDécortiquez vous", "Que dit une route à son fils ?\nNe rentre pas trottoir", "Tu sais combien il y a de somalien en Somalie ?\n500 grammes", "Qu'est-ce qui est gros, gris et qui sait pas nager ?\nUn château", "Quel est le pays préféré des ours ?\nL'Ourstralie", "Quel est la couleur du virus de la grippe ?\nGris pâle", "Tu sais ce que c'est qu'un arabe dans un oeuf ?\nUn katar surprise");
+var tableauBlague = new Array("Tu connais la différence entre un micro-ondes et un cecoya ?", 
+"Qu'est-ce qui fait toin toin ?", 
+"Où est fabriqué le viagra ?", 
+"Que font les dinosaures quand ils n'arrivent pas à ce mettre d'accord ?", 
+"Pourquoi mettons une selle sur un cheval ?", 
+"Qu'est-ce qui est transparent et qui cours dans un champ ?", 
+"Quel est le meilleur moyen de contraception ?", 
+"Qu'est-ce qu'un hamster dans l'espace ?", 
+"Tu sais pourquoi les États-Unis peuvent pas jouer au échecs ?", 
+"Tu sais pourquoi Harry Potter est classé comme film fantastique ?", 
+"Tu sais c'est quoi la différence entre un melon et un bébé ?", 
+"Qu'est-ce qui a 4 pattes et 1 bras ?", 
+"Tu sais pourquoi les Tyrannosaures tape pas dans leur main ?", 
+"Tu sais c'est quoi la différence entre un thermomètre rectal et oral ?", 
+"Simon n'a pas de bras.\nToc toc ?\nQui est là ?", 
+"Qu'est-ce que dit Frodon devant sa maison ?", 
+"Comment on appel un boomerang qui reviens pas ?", 
+"Comment faire aboyer un chat ?", 
+"Qu'est-ce qui n'est pas un steak ?", 
+"Que dit une fraise sur un cheval ?", 
+"Que dit un poussin de 500kg ?", 
+"Que dit un médecin a une crevette avant de la diagnostiquer ?", 
+"Que dit une route à son fils ?", 
+"Tu sais combien il y a de somalien en Somalie ?", 
+"Qu'est-ce qui est gros, gris et qui sait pas nager ?", 
+"Quel est le pays préféré des ours ?", 
+"Quel est la couleur du virus de la grippe ?", 
+"Tu sais ce que c'est qu'un arabe dans un oeuf ?",
+
+"C'est 2 gros qui sont sur un bateau du coup le bateau il coule",
+"C'est un gars qui est tellement petit que sa tête elle pu des pieds",
+"C'est un hiboux qui rentre dans une casserole et du coup il bout", 
+" C'est l'histoire d'un prêtre qui rentre dans un enfant", 
+"J'ai reçu un coup de téléphone hier, ça a fait mal", 
+"La dernière fois j'ai fais une blague sur les paraplégiques mais ça a pas bien marché", 
+"C'est l'histoire d'une fleur qui court, puis qu'il se plante", 
+"Je pensais pas pouvoir aller dans une union soviétique, mais finalement j'ai Russie");
+var tableauRep = new Array("Non ? Moi non plus.", "Un tanard", "Au boukistan", "Un tiragosaure", "Parce que sinon on tombe", "Troupeau de vitre", "Être moche", "Un hamsteroide", "Ils leur manque 2 tours", "Parce que le roux à des amis", "L'un est facile à coupé et est bon en bouche alors que l'autre est un fruit", "Un pitbull dans un jardin d'enfant", "Parce qu'ils sont morts", "Le goût", "Pas Simon", "C'est la que j'hobbit", "Un bâton", "Un briquet, de l'essence et WOUF", "Une pastèque", "Tagada Tagada", "**PIOU PIOU**", "Décortiquez vous", "Ne rentre pas trottoir", "500 grammes", "Un château", "L'Ourstralie", "Gris pâle", "Un katar surprise");
 
 bot.on('ready', () => {
     console.log("Bot ready !");
@@ -103,8 +140,11 @@ bot.on('message', function (message){
     randum();
     random();
     var cadreJoke = new Discord.RichEmbed()
-      .setColor("#FF00FF")
+      .setColor("#FC0CFC")
       .addField(tableauJoke[randjoke],tableauBlague[randnum])
+      if (randnum <= 27){
+        cadreJoke.addField("Réponse",tableauRep[randnum])
+      }
     message.channel.send(cadreJoke);
   }
 
