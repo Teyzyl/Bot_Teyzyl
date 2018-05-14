@@ -149,7 +149,7 @@ bot.on('message', function (message){
   }
 
   if (message.content === prefix + "denis"){
-    message.channel.sendMessage("!play denis brognard ha remix");
+    message.channel.send("!play denis brognard ha remix");
   }
 
   if ((message.content === prefix + "help") || (message.content === prefix + "commande") || (message.content === prefix + "commandes")){
