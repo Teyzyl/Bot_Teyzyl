@@ -149,7 +149,7 @@ bot.on('message', function (message){
   }
 
   if (message.content === prefix + "denis"){
-    message.channel.sendMessage("!play https://www.youtube.com/watch?v=Ri7GzCUTC5s");
+    message.channel.sendMessage("!play denis brognard ha remix");
   }
 
   if ((message.content === prefix + "help") || (message.content === prefix + "commande") || (message.content === prefix + "commandes")){
