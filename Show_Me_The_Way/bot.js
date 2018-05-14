@@ -148,6 +148,10 @@ bot.on('message', function (message){
     message.channel.send(cadreJoke);
   }
 
+  if (message.content === prefix + "denis"){
+    message.channel.sendMessage("!play https://www.youtube.com/watch?v=Ri7GzCUTC5s");
+  }
+
   if ((message.content === prefix + "help") || (message.content === prefix + "commande") || (message.content === prefix + "commandes")){
     var cadreHelp = new Discord.RichEmbed()
       .setColor("#723AE2")
