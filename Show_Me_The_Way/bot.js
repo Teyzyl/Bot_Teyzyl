@@ -106,7 +106,7 @@ bot.on('message', function (message){
   if (message.content === prefix + "dps"){
     var cadreDPS = new Discord.RichEmbed()
       .setColor("#FF0000")
-      .addField("ARC DPS", "Lien pour installer l'addon : http://lea.ancykien.fr/gw2/leaflet/gw2richoremap.htm")
+      .addField("ARC DPS", "Lien pour installer l'addon : https://www.deltaconnected.com/arcdps/x64/")
       .addField("Installation de l'addon","1- Télécharger d3d9.dll\n2- Déplacer le dans le fichier bin64 de votre jeu Guild Wars 2\n3- Lancer le jeu et l'addon est là !\n**Refaite cette manipulation à chaque mise à jour sinon votre jeu peu crasher !**")
   message.channel.send(cadreDPS);
   }
