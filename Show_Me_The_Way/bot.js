@@ -71,16 +71,16 @@ bot.on('message', function (message){
   if ((message.content === prefix + "guilde") || (message.content === prefix + "googledoc")){
     var cadreGuilde = new Discord.RichEmbed()
      .setColor("#1FFB2E")
-     .addField("Google doc de la guilde", "Lien : https://docs.google.com/spreadsheets/d/1yZMqrtGwpJmDNbMeB4555Bq_3Bw0SK6pUCrLrS4f61k/edit#gid=0")
+     .addField("Google doc de la guilde", "Lien : https://docs.google.com/spreadsheets/d/1O_pGHg9UAngqfbUQl4SdjDZxJWk4tS0ndinGd4TvVfE/edit?usp=sharing")
   message.channel.send(cadreGuilde);
   }
 
-  if (message.content === prefix + "map"){
+ /** if (message.content === prefix + "map"){
     var cadreMap = new Discord.RichEmbed()
      .setColor("#FFFF00")
      .addField("Où les gens de la guilde habitent", "Lien : https://www.google.com/maps/d/edit?mid=1X4vctGyosma-WWXvfMSQR2aIsh5jCwuz&ll=48.30519099462427%2C-0.5212956499999564&z=8")
   message.channel.send(cadreMap);
-}
+}*/
 
   if (message.content === prefix + "efficiency"){
     var cadreEffi = new Discord.RichEmbed()
