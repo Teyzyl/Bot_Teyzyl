@@ -47,7 +47,7 @@ bot.on('ready', () => {
 });
 
 bot.on('ready', function (){
-  bot.user.setActivity('Loup-Garou').catch(console.error);
+  bot.user.setActivity('Youtube').catch(console.error);
 })
 
 bot.on('guildMemberAdd', function (membre){
