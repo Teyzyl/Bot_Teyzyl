@@ -156,7 +156,7 @@ bot.on('message', function (message){
     var cadreJoke = new Discord.RichEmbed()
       .setColor("#FC0CFC")
       .addField(tableauJoke[randjoke],tableauBlague[randnum])
-      if (randnum <= 27){
+      if (randnum <= 36){
         cadreJoke.addField("Réponse",tableauRep[randnum])
       }
     message.channel.send(cadreJoke);
