@@ -31,6 +31,15 @@ var tableauBlague = new Array("Tu connais la différence entre un micro-ondes et
 "Quel est le pays préféré des ours ?", 
 "Quel est la couleur du virus de la grippe ?", 
 "Tu sais ce que c'est qu'un arabe dans un oeuf ?",
+"Comment est-ce que tu sais si une fille est un princesse ?",
+"Comment appelle-t-on l'union entre un Haïtien et une Mexicain ?",
+"Tu sais comment faire pour sortir l'enfant en nous ?",
+"Tu sais comment on dit précoce en espagnol ?",
+"Tu sais ce que c'est l'animal préféré des témoins de Jéhovah ?",
+"Tu sais pourquoi c'est dur d'éduquer un enfant sourd ?",
+"Comment on appelle un papa qui change de sexe et qui fait des conférence là-dessus ?",
+"Qu'est-ce que une blonde fait quand elle apprend qu'elle est adoptée ?",
+"Qu'est-ce que le ballon gonflable troué dit à son ami ?",
 
 "C'est 2 gros qui sont sur un bateau du coup le bateau il coule",
 "C'est un gars qui est tellement petit que sa tête elle pu des pieds",
@@ -39,8 +48,11 @@ var tableauBlague = new Array("Tu connais la différence entre un micro-ondes et
 "J'ai reçu un coup de téléphone hier, ça a fait mal", 
 "La dernière fois j'ai fais une blague sur les paraplégiques mais ça a pas bien marché", 
 "C'est l'histoire d'une fleur qui court, puis qu'il se plante", 
-"Je pensais pas pouvoir aller dans une union soviétique, mais finalement j'ai Russie");
-var tableauRep = new Array("Non ? Moi non plus.", "Un tanard", "Au boukistan", "Un tiragosaure", "Parce que sinon on tombe", "Troupeau de vitre", "Être moche", "Un hamsteroide", "Ils leur manque 2 tours", "Parce que le roux à des amis", "L'un est facile à coupé et est bon en bouche alors que l'autre est un fruit", "Un pitbull dans un jardin d'enfant", "Parce qu'ils sont morts", "Le goût", "Pas Simon", "C'est la que j'hobbit", "Un bâton", "Un briquet, de l'essence et WOUF", "Une pastèque", "Tagada Tagada", "**PIOU PIOU**", "Décortiquez vous", "Ne rentre pas trottoir", "500 grammes", "Un château", "L'Ourstralie", "Gris pâle", "Un katar surprise");
+"Je pensais pas pouvoir aller dans une union soviétique, mais finalement j'ai Russie"
+"Mon infirmière ma crié dessus l'autre jour mais je suis toujours pas sûr de la raison, parce que j'ai du mal à écouter quand je me branle",
+"Je suis pas superstitieux mais quand je vois un animal flotter sur un lac je me dis que c'est un cygne",
+"C'est un gars il va chez le médecin\nLe médecin : 'Faudrait que vous arrêtiez de vous masturber'\nLe gars : 'Mais pourquoi ?'\nLe médecin : 'J'aimerais vous examinez'";
+var tableauRep = new Array("Non ? Moi non plus.", "Un tanard", "Au boukistan", "Un tiragosaure", "Parce que sinon on tombe", "Troupeau de vitre", "Être moche", "Un hamsteroide", "Ils leur manque 2 tours", "Parce que le roux à des amis", "L'un est facile à coupé et est bon en bouche alors que l'autre est un fruit", "Un pitbull dans un jardin d'enfant", "Parce qu'ils sont morts", "Le goût", "Pas Simon", "C'est la que j'hobbit", "Un bâton", "Un briquet, de l'essence et WOUF", "Une pastèque", "Tagada Tagada", "**PIOU PIOU**", "Décortiquez vous", "Ne rentre pas trottoir", "500 grammes", "Un château", "L'Ourstralie", "Gris pâle", "Un katar surprise","Elle aime que tu viens dans son palais","Une choco-latine","T'utilise un cintre en métal","Dèche pas si tôt","Le serpent à sonnette","Il t'écoute jamais","Un ex-père","Elle l'annonce à ses parents","Prrffffrrfffrrfff");
 
 bot.on('ready', () => {
     console.log("Bot ready !");
