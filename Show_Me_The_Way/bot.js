@@ -48,7 +48,7 @@ var tableauBlague = new Array("Tu connais la différence entre un micro-ondes et
 "J'ai reçu un coup de téléphone hier, ça a fait mal", 
 "La dernière fois j'ai fais une blague sur les paraplégiques mais ça a pas bien marché", 
 "C'est l'histoire d'une fleur qui court, puis qu'il se plante", 
-"Je pensais pas pouvoir aller dans une union soviétique, mais finalement j'ai Russie"
+"Je pensais pas pouvoir aller dans une union soviétique, mais finalement j'ai Russie",
 "Mon infirmière ma crié dessus l'autre jour mais je suis toujours pas sûr de la raison, parce que j'ai du mal à écouter quand je me branle",
 "Je suis pas superstitieux mais quand je vois un animal flotter sur un lac je me dis que c'est un cygne",
 "C'est un gars il va chez le médecin\nLe médecin : 'Faudrait que vous arrêtiez de vous masturber'\nLe gars : 'Mais pourquoi ?'\nLe médecin : 'J'aimerais vous examinez'";
