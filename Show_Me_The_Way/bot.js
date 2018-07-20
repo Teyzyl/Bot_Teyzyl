@@ -161,14 +161,14 @@ bot.on('message', function (message){
       }
     message.channel.send(cadreJoke);
   }
-/**
+
   if ((message.content === prefix + "metier") || (message.content === prefix + "métier")){
     var cadreMetier = new Discord.RichEmbed()
       .setColor("#B3B3B3")
       .addField("Monter un métier", "Lien pour monter ses métiers : http://gw2crafts.net/fr/")
       message.channel.send(cadreMetier);
   }
-*/
+
   if ((message.content === prefix + "help") || (message.content === prefix + "commande") || (message.content === prefix + "commandes")){
     var cadreHelp = new Discord.RichEmbed()
       .setColor("#723AE2")
