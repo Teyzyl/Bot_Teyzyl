@@ -83,7 +83,7 @@ bot.on('message', function (message){
   if ((message.content === prefix + "guilde") || (message.content === prefix + "googledoc")){
     var cadreGuilde = new Discord.RichEmbed()
      .setColor("#1FFB2E")
-     .addField("Google doc de la guilde", "Lien : https://docs.google.com/spreadsheets/d/1O_pGHg9UAngqfbUQl4SdjDZxJWk4tS0ndinGd4TvVfE/edit?usp=sharing")
+     .addField("Google doc de la guilde", "Lien : https://docs.google.com/spreadsheets/d/19Xo88bTCC3twiRqYjRXYOqa8Skoas7PBQWmINkW_2RI/edit?usp=sharing")
   message.channel.send(cadreGuilde);
   }
 
