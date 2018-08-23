@@ -40,6 +40,7 @@ var tableauBlague = new Array("Tu connais la différence entre un micro-ondes et
 "Comment on appelle un papa qui change de sexe et qui fait des conférence là-dessus ?",
 "Qu'est-ce que une blonde fait quand elle apprend qu'elle est adoptée ?",
 "Qu'est-ce que le ballon gonflable troué dit à son ami ?",
+"Comment appel ton un restaurant qui sert des lesbiennes ?",
 
 "C'est 2 gros qui sont sur un bateau du coup le bateau il coule",
 "C'est un gars qui est tellement petit que sa tête elle pu des pieds",
@@ -52,7 +53,7 @@ var tableauBlague = new Array("Tu connais la différence entre un micro-ondes et
 "Mon infirmière ma crié dessus l'autre jour mais je suis toujours pas sûr de la raison, parce que j'ai du mal à écouter quand je me branle",
 "Je suis pas superstitieux mais quand je vois un animal flotter sur un lac je me dis que c'est un cygne",
 "C'est un gars il va chez le médecin\nLe médecin : 'Faudrait que vous arrêtiez de vous masturber'\nLe gars : 'Mais pourquoi ?'\nLe médecin : 'J'aimerais vous examinez'");
- var tableauRep = new Array("Non ? Moi non plus.", "Un tanard", "Au boukistan", "Un tiragosaure", "Parce que sinon on tombe", "Troupeau de vitre", "Être moche", "Un hamsteroide", "Ils leur manque 2 tours", "Parce que le roux à des amis", "L'un est facile à coupé et est bon en bouche alors que l'autre est un fruit", "Un pitbull dans un jardin d'enfant", "Parce qu'ils sont morts", "Le goût", "Pas Simon", "C'est la que j'hobbit", "Un bâton", "Un briquet, de l'essence et WOUF", "Une pastèque", "Tagada Tagada", "**PIOU PIOU**", "Décortiquez vous", "Ne rentre pas trottoir", "500 grammes", "Un château", "L'Ourstralie", "Gris pâle", "Un katar surprise", "Elle aime que tu viens dans son palais", "Une choco-latine", "T'utilise un cintre en métal", "Dèche pas si tôt", "Le serpent à sonnette", "Il t'écoute jamais", "Un ex-père", "Elle l'annonce à ses parents", "Prrffffrrfffrrfff");
+ var tableauRep = new Array("Non ? Moi non plus.", "Un tanard", "Au boukistan", "Un tiragosaure", "Parce que sinon on tombe", "Troupeau de vitre", "Être moche", "Un hamsteroide", "Ils leur manque 2 tours", "Parce que le roux à des amis", "L'un est facile à coupé et est bon en bouche alors que l'autre est un fruit", "Un pitbull dans un jardin d'enfant", "Parce qu'ils sont morts", "Le goût", "Pas Simon", "C'est la que j'hobbit", "Un bâton", "Un briquet, de l'essence et WOUF", "Une pastèque", "Tagada Tagada", "**PIOU PIOU**", "Décortiquez vous", "Ne rentre pas trottoir", "500 grammes", "Un château", "L'Ourstralie", "Gris pâle", "Un katar surprise", "Elle aime que tu viens dans son palais", "Une choco-latine", "T'utilise un cintre en métal", "Dèche pas si tôt", "Le serpent à sonnette", "Il t'écoute jamais", "Un ex-père", "Elle l'annonce à ses parents", "Prrffffrrfffrrfff","C'est un restaurant cunilaire");
 
 bot.on('ready', () => {
     console.log("Bot ready !");
@@ -164,7 +165,7 @@ bot.on('message', function (message){
     var cadreJoke = new Discord.RichEmbed()
       .setColor("#FC0CFC")
       .addField(tableauJoke[randjoke],tableauBlague[randnum])
-      if (randnum <= 36){
+      if (randnum <= 37){
         cadreJoke.addField("Réponse",tableauRep[randnum])
       }
     message.channel.send(cadreJoke);
