@@ -60,7 +60,7 @@ bot.on('ready', () => {
 });
 
 bot.on('ready', function (){
-  bot.user.setActivity('www.twitch.tv/teyzyl').catch(console.error);
+  bot.user.setActivity(prefix + 'help').catch(console.error);
 })
 
 bot.on('guildMemberAdd', function (membre){
