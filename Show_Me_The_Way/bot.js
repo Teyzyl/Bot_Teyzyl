@@ -116,6 +116,13 @@ bot.on('message', function (message){
       .addField("Guild Wars 2 Efficiency", "Lien : https://gw2efficiency.com/")
   message.channel.send(cadreEffi);
   }
+  
+ if ((message.content === prefix + "combo") || (message.content === prefix + "combos")){
+    var cadreCombo = new Discord.RichEmbed()
+      .setColor("#6DEDDC")
+      .addField("Les combos", "Site du bus magique, lien : https://www.lebusmagique.fr/pages/guides/tutobus/les-combos.html")
+  message.channel.send(cadreCombo);
+  }
 
   if (message.content === prefix + "mcm"){
     var cadreMCM = new Discord.RichEmbed()
@@ -135,7 +142,7 @@ bot.on('message', function (message){
     var cadreDPS = new Discord.RichEmbed()
       .setColor("#FF0000")
       .addField("ARC DPS", "Lien pour installer l'addon : https://www.deltaconnected.com/arcdps/x64/")
-      .addField("Installation de l'addon","1- Télécharger d3d9.dll\n2- Déplacer le dans le fichier bin64 de votre jeu Guild Wars 2\n3- Lancer le jeu et l'addon est là !\n**Refaite cette manipulation à chaque mise à jour sinon votre jeu peu crasher !**")
+      .addField("Installation de l'addon","1- Télécharger d3d9.dll\n2- Déplacer le dans le fichier bin64 de votre jeu Guild Wars 2\n3- Lancer le jeu et l'addon est là !\n**Refaite cette manipulation à chaque mise à jour sinon votre jeu peut crasher !**")
   message.channel.send(cadreDPS);
   }
 
