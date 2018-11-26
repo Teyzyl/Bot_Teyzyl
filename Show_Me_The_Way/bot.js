@@ -192,7 +192,7 @@ bot.on('message', function (message){
   message.channel.send(cadreCombo);
   }
   
-  if ((message.content === prefix + "combo") || (message.content === prefix + "combos")){
+  if (message.content === prefix + "style"){
     var cadreStyle = new Discord.RichEmbed()
       .setColor("#6DEDDC")
       .addField("Le style 😎", "Lien : https://gw2style.com")
