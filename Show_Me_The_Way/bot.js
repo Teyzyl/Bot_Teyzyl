@@ -86,6 +86,15 @@ bot.on('guildMemberAdd', function (membre){
     var role = membre.guild.roles.find("name","Viewers")
     membre.addRole(role)
 })
+bot.on('guildMemberAdd', function (membre){
+  membre.createDM().then(function (channel) {
+    //channel.send("Bienvenue dans le guilde Show Me The Way !\nJe te souhaite la bienvenue parmi nous.\nJe suis très content de t'accueillir aujourd'hui et j'espère que tu te plairas ici !\nN'hésite pas à me solliciter si tu as besoin de quoi que ce soit, je me ferai un plaisir de t'apporter mon aide, après tout je suis le bot de la guilde :grinning: \nFait " + prefix + "help dans un canal pour connaître les commandes disponibles.");
+    /**\nJe te prie d'aller remplir le google doc de la guilde, le lien est juste là : https://docs.google.com/spreadsheets/d/1yZMqrtGwpJmDNbMeB4555Bq_3Bw0SK6pUCrLrS4f61k/edit#gid=0");*/
+  }).catch(console.error)
+    var role = membre.guild.roles.find("name","Malfrats")
+    membre.addRole(role)
+})
+
 
 bot.on('message', function (message){
   if (message.content === prefix + "build"){
