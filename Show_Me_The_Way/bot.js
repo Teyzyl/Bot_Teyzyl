@@ -105,13 +105,13 @@ bot.on('message', function (message){
   message.channel.send(cadreBuild);
   }
 
-  if ((message.content === prefix + "guilde") || (message.content === prefix + "googledoc")){
+  if ((message.content === prefix + "guilde") || (message.content === prefix + "googledocGW2")){
     var cadreGuilde = new Discord.RichEmbed()
      .setColor("#1FFB2E")
      .addField("Google doc de la guilde", "Lien : https://docs.google.com/spreadsheets/d/19Xo88bTCC3twiRqYjRXYOqa8Skoas7PBQWmINkW_2RI/edit?usp=sharing")
   message.channel.send(cadreGuilde);
   }
-
+  
  /** if (message.content === prefix + "map"){
     var cadreMap = new Discord.RichEmbed()
      .setColor("#FFFF00")
@@ -207,12 +207,110 @@ bot.on('message', function (message){
       .addField("Le style 😎", "Lien : https://gw2style.com")
   message.channel.send(cadreStyle);
   }
-
+  
   if ((message.content === prefix + "help") || (message.content === prefix + "commande") || (message.content === prefix + "commandes")){
     var cadreHelp = new Discord.RichEmbed()
       .setColor("#723AE2")
-      .addField("Liste des commandes","Toutes les commandes commencent par '" + prefix + "'\n\n__Voici la liste des commandes disponibles :__\n**" + prefix + "help**, **" + prefix + "commande** ou **" + prefix + "commandes** : Donne toutes les commandes\n**" + prefix + "guilde** ou **" + prefix + "googledoc** : Lien vers le google doc de la guilde\n**" + prefix + "build** : Lien pour faire des stuffs\n**" + prefix + "efficiency** : Lien vers un site complet sur GW2\n**" + prefix + "mcm** : Lien vers une map McM actualisée instantanément\n**" + prefix + "veine** ou **" + prefix + "veines** : Lien vers une map donnant toutes les veines riches du jeu\n**" + prefix + "dps** : Lien de l'addons du DPS Meter\n**" + prefix + "mouse** ou **" + prefix + "souris** : Lien de l'appli pour changer la souris\n**" + prefix + "mission** ou **" + prefix + "missions** : Lien pour les missions de guilde\n**" + prefix + "blague** : Raconte une blague (plus ou moins drôle)\n**" + prefix + "metier** ou **" + prefix + "métier** : Lien pour monter ses métiers\n**" + prefix + "style** : Lien pour être grave stylé !")
+      .addField("Liste des commandes","Toutes les commandes commencent par '" + prefix + "'\n\n__Voici la liste des commandes disponibles :__\n**" + prefix + "helpGW2** : Donne toutes les commandes en rapport avec Guild Wars 2\n**" + prefix + "helpD2** : Donne toutes les commandes en rapport avec Destiny 2**)
       message.channel.send(cadreHelp);
+  }
+})
+
+if (message.content === prefix + "helpGW2"){
+    var cadreHelp = new Discord.RichEmbed()
+      .setColor("#723AE2")
+      .addField("Liste des commandes","Toutes les commandes commencent par '" + prefix + "'\n\n__Voici la liste des commandes disponibles :__\n**" + prefix + "help**, **" + prefix + "commande** ou **" + prefix + "commandes** : Donne toutes les catégories de commande\n**" + prefix + "guilde** ou **" + prefix + "googledocGW2** : Lien vers le google doc de la guilde\n**" + prefix + "build** : Lien pour faire des stuffs\n**" + prefix + "efficiency** : Lien vers un site complet sur GW2\n**" + prefix + "mcm** : Lien vers une map McM actualisée instantanément\n**" + prefix + "veine** ou **" + prefix + "veines** : Lien vers une map donnant toutes les veines riches du jeu\n**" + prefix + "dps** : Lien de l'addons du DPS Meter\n**" + prefix + "mouse** ou **" + prefix + "souris** : Lien de l'appli pour changer la souris\n**" + prefix + "mission** ou **" + prefix + "missions** : Lien pour les missions de guilde\n**" + prefix + "blague** : Raconte une blague (plus ou moins drôle)\n**" + prefix + "metier** ou **" + prefix + "métier** : Lien pour monter ses métiers\n**" + prefix + "style** : Lien pour être grave stylé !")
+      message.channel.send(cadreHelp);
+  }
+})
+
+//Section Destiny 2
+
+  if (message.content === prefix + "helpD2"){
+    var cadreHelp = new Discord.RichEmbed()
+      .setColor("#723AE2")
+      .addField("Liste des commandes","Toutes les commandes commencent par '" + prefix + "'\n\n__Voici la liste des commandes disponibles :__\n**" + prefix + "help**, **" + prefix + "commande** ou **" + prefix + "commandes** : Donne toutes les catégories de commande\n**" + prefix + "googledocD2** : Lien vers le google doc\n**" + prefix + "light** : Lien de light.gg\n**" + prefix + "dim** : Lien vers Destiny Item Manager\n**" + prefix + "raid** : Lien vers raid report\n**" + prefix + "waste** ou **" + prefix + "time** : Lien vers Waste Time On Destiny\n**" + prefix + "menagerie** : Lien vers un site regroupant les armes et armures de la ménagerie\n**" + prefix + "embleme** : Lien pour voir tout les emblèmes de Destiny 2\n**" + prefix + "nuit** ou **" + prefix + "nuitnoire** : Lien pour speed run les nuits noire\n" + prefix + "tracker** : Lien pour Destiny Tracker\n")
+      message.channel.send(cadreHelp);
+  }
+})
+
+if message.content === prefix + "googledocD2"){
+    var cadreGDoc = new Discord.RichEmbed()
+     .setColor("#1FFB2E")
+     .addField("Google doc de la guilde", "Lien : https://docs.google.com/spreadsheets/d/1nQhQsg_3Yeu2Qrl-B2Lo0sSST3P2qcztnPK_X-PiqOM/edit?usp=sharing")
+  message.channel.send(cadreGDoc);
+  }
+})
+
+if (message.content === prefix + "light") {
+    var cadreLight = new Discord.RichEmbed()
+     .setColor("#FFFF00")
+     .addField("Light.gg", "Lien : light.gg")
+  message.channel.send(cadreLight);
+  }
+})
+
+if (message.content === prefix + "light") {
+    var cadreLight = new Discord.RichEmbed()
+     .setColor("#FFFF00")
+     .addField("Light.gg", "Lien : light.gg")
+  message.channel.send(cadreLight);
+  }
+})
+
+if (message.content === prefix + "dim") {
+    var cadreDIM = new Discord.RichEmbed()
+     .setColor("#FF9201")
+     .addField("Destiny Item Manager", "Lien : https://destinyitemmanager.com")
+  message.channel.send(cadreDIM);
+  }
+})
+
+if ((message.content === prefix + "nuit") || (message.content === prefix + "nuitnoire")) {
+    var cadreNuit = new Discord.RichEmbed()
+     .setColor("#0119FF")
+     .addField("Speedrun Nuit Noire", "Lien : https://clan.report")
+  message.channel.send(cadreNuit);
+  }
+})
+
+if (message.content === prefix + "raid"){
+    var cadreRaid = new Discord.RichEmbed()
+     .setColor("#FF0000")
+     .addField("Raid Report", "Lien : https://raid.report")
+  message.channel.send(cadreRaid);
+  }
+})
+
+if ((message.content === prefix + "waste") || (message.content === prefix + "time")) {
+    var cadreWaste = new Discord.RichEmbed()
+     .setColor("#000000")
+     .addField("Waste Time On Destiny", "Lien : https://www.wastedondestiny.com/")
+  message.channel.send(cadreWaste);
+  }
+})
+
+if (message.content === prefix + "menagerie") {
+    var cadreMenagerie = new Discord.RichEmbed()
+     .setColor("#A31BD3")
+     .addField("Menagerie", "Lien : https://menagerie-calculator.now.sh/")
+  message.channel.send(cadreMenagerie);
+  }
+})
+
+if (message.content === prefix + "embleme") {
+    var cadreEmbleme = new Discord.RichEmbed()
+     .setColor("#FFFFFF")
+     .addField("Tout les emblèmes", "Lien : https://destiny2db.pts-squad.net/")
+  message.channel.send(cadreEmbleme);
+  }
+})
+
+if (message.content === prefix + "tracker") {
+    var cadreTracker = new Discord.RichEmbed()
+     .setColor("#6D6B6E")
+     .addField("Destiny Tracker", "Lien : https://destinytracker.com/d2/intel#")
+  message.channel.send(cadreTracker);
   }
 })
 
