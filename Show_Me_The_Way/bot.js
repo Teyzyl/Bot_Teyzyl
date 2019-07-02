@@ -234,7 +234,7 @@ if (message.content === prefix + "helpGW2"){
   }
 
 
-if message.content === prefix + "googledocD2"){
+if (message.content === prefix + "googledocD2"){
     var cadreGDoc = new Discord.RichEmbed()
      .setColor("#1FFB2E")
      .addField("Google doc de la guilde", "Lien : https://docs.google.com/spreadsheets/d/1nQhQsg_3Yeu2Qrl-B2Lo0sSST3P2qcztnPK_X-PiqOM/edit?usp=sharing")
@@ -312,6 +312,7 @@ if (message.content === prefix + "tracker") {
      .addField("Destiny Tracker", "Lien : https://destinytracker.com/d2/intel#")
   message.channel.send(cadreTracker);
   }
+  
 })
 
 bot.login(process.env.BOT_TOKEN);
