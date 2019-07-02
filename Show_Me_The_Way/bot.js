@@ -211,7 +211,7 @@ bot.on('message', function (message){
   if ((message.content === prefix + "help") || (message.content === prefix + "commande") || (message.content === prefix + "commandes")){
     var cadreHelp = new Discord.RichEmbed()
       .setColor("#723AE2")
-      .addField("Liste des commandes","Toutes les commandes commencent par '" + prefix + "'\n\n__Voici la liste des commandes disponibles :__\n**" + prefix + "helpGW2** : Donne toutes les commandes en rapport avec Guild Wars 2\n**" + prefix + "helpD2** : Donne toutes les commandes en rapport avec Destiny 2**)
+      .addField("Liste des commandes","Toutes les commandes commencent par '" + prefix + "'\n\n__Voici la liste des commandes disponibles :__\n**" + prefix + "helpGW2** : Donne toutes les commandes en rapport avec Guild Wars 2\n**" + prefix + "helpD2** : Donne toutes les commandes en rapport avec Destiny 2**")
       message.channel.send(cadreHelp);
   }
 })
