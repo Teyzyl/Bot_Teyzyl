@@ -249,15 +249,6 @@ if (message.content === prefix + "light") {
   message.channel.send(cadreLight);
   }
 
-
-if (message.content === prefix + "light") {
-    var cadreLight = new Discord.RichEmbed()
-     .setColor("#FFFF00")
-     .addField("Light.gg", "Lien : light.gg")
-  message.channel.send(cadreLight);
-  }
-
-
 if (message.content === prefix + "dim") {
     var cadreDIM = new Discord.RichEmbed()
      .setColor("#FF9201")
