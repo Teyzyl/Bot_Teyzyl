@@ -260,7 +260,7 @@ if (message.content === prefix + "dim") {
 if ((message.content === prefix + "nuit") || (message.content === prefix + "nuitnoire")) {
     var cadreNuit = new Discord.RichEmbed()
      .setColor("#0119FF")
-     .addField("Speedrun Nuit Noire", "Lien : https://clan.report")
+     .addField("Speedrun Nuit Noire", "Lien : https://clan.report/compare-nightfalls")
   message.channel.send(cadreNuit);
   }
 
