@@ -226,7 +226,7 @@ if (message.content === prefix + "helpGW2"){
   if (message.content === prefix + "cachecache"){
     var cadreCache = new Discord.RichEmbed()
      .setColor("#9708F5")
-     .addField("__**Règles du cache cache**__", "Il s'agit d'un cache cache dans une capitale du jeu décidé en groupe.\n\n__2 équipes :__\n○ 1. les cachés (Le groupe, pas obligé de se cacher ensemble)\n○ 2. le chercheur (désigné par un random.gg et, si possible, fait un partage d'écran sur discord pour suivre sa recherche)\nPour notre cache cache de guilde n'oubliez pas de :\n- Echap -> Option -> Option générale -> décocher 'afficher le nom de tous les joueurs'\n- Ne pas représenter la guilde\n\n")
+     .addField("__**Règles du cache cache**__", "Il s'agit d'un cache cache dans une capitale du jeu décidé en groupe.\n\n__2 équipes :__\n○ 1. les cachés (Le groupe, pas obligé de se cacher ensemble)\n○ 2. le chercheur (désigné par un random.gg et, si possible, fait un partage d'écran sur discord pour suivre sa recherche)\n\nPour notre cache cache de guilde n'oubliez pas de :\n- Echap -> Option -> Option générale -> décocher 'afficher le nom de tous les joueurs'\n- Ne pas représenter la guilde\n\n")
   message.channel.send(cadreCache);
   }
 
