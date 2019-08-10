@@ -222,6 +222,13 @@ if (message.content === prefix + "helpGW2"){
       .addField("Liste des commandes","Toutes les commandes commencent par '" + prefix + "'\n\n__Voici la liste des commandes disponibles :__\n**" + prefix + "help**, **" + prefix + "commande** ou **" + prefix + "commandes** : Donne toutes les catégories de commande\n**" + prefix + "guilde** ou **" + prefix + "googledocGW2** : Lien vers le google doc de la guilde\n**" + prefix + "build** : Lien pour faire des stuffs\n**" + prefix + "efficiency** : Lien vers un site complet sur GW2\n**" + prefix + "mcm** : Lien vers une map McM actualisée instantanément\n**" + prefix + "veine** ou **" + prefix + "veines** : Lien vers une map donnant toutes les veines riches du jeu\n**" + prefix + "dps** : Lien de l'addons du DPS Meter\n**" + prefix + "mouse** ou **" + prefix + "souris** : Lien de l'appli pour changer la souris\n**" + prefix + "mission** ou **" + prefix + "missions** : Lien pour les missions de guilde\n**" + prefix + "blague** : Raconte une blague (plus ou moins drôle)\n**" + prefix + "metier** ou **" + prefix + "métier** : Lien pour monter ses métiers\n**" + prefix + "style** : Lien pour être grave stylé !")
       message.channel.send(cadreHelp);
   }
+  
+  if (message.content === prefix + "cachecache"){
+    var cadreCache = new Discord.RichEmbed()
+     .setColor("#9708F5")
+     .addField("__**Règles du cache cache**__", "Cette commande n'existe pas parce que Sliver pue la merde !")
+  message.channel.send(cadreCache);
+  }
 
 
 //Section Destiny 2
