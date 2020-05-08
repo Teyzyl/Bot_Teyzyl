@@ -171,7 +171,7 @@ bot.on('message', function (message){
 
   bot.on('message',message => {
     randomRep();
-    message.channel.send(teableauDM[randrep]);
+    message.channel.send(tableauDM[randrep]);
     
    // membre.createDM().then(function (channel) {
       //channel.send("Bienvenue dans le guilde Show Me The Way !\nJe te souhaite la bienvenue parmi nous.\nJe suis très content de t'accueillir aujourd'hui et j'espère que tu te plairas ici !\nN'hésite pas à me solliciter si tu as besoin de quoi que ce soit, je me ferai un plaisir de t'apporter mon aide, après tout je suis le bot de la guilde :grinning: \nFait " + prefix + "help dans un canal pour connaître les commandes disponibles.");
