@@ -98,7 +98,7 @@ bot.on('guildMemberAdd', function (membre){
 
 bot.on('message',message => {
   randomRep();
-  message.createDM().send(teableauDM[randomRep]);
+  message.createDM().send(teableauDM[randrep]);
 })
 
 bot.on('message', function (message){
