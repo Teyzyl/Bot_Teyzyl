@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client()
+const bot = new Discord.Client();
 
 var prefix = ("/");
 var tableauJoke = new Array("C'est la meilleur blague du monde !", "Celle-ci est pas mal", "En vrai elle est pas super mais rigole", "Je l'adore celle la", "Obligé tu va rire :wink:" );
@@ -165,19 +165,18 @@ bot.on('message', function (message){
 
   function randomRep(min, max){
     min = Math.ceil(0);
-    max = Math.floor(tableauDM.length-1);
+    max = Math.floor(tableauDM.length);
     randrep = Math.floor(Math.random() * (max - min + 1) + min);
   }
 
   bot.on('message',message => {
     randomRep();
-    message.channel.send("" + tableauDM[randrep]);
+    if(randrep != tableauDM.length){
+      message.author.createDM().then(channel => {
+        channel.send("" + tableauDM[randrep]);
+      }
+    }
     
-   // membre.createDM().then(function (channel) {
-      //channel.send("Bienvenue dans le guilde Show Me The Way !\nJe te souhaite la bienvenue parmi nous.\nJe suis très content de t'accueillir aujourd'hui et j'espère que tu te plairas ici !\nN'hésite pas à me solliciter si tu as besoin de quoi que ce soit, je me ferai un plaisir de t'apporter mon aide, après tout je suis le bot de la guilde :grinning: \nFait " + prefix + "help dans un canal pour connaître les commandes disponibles.");
-      /**\nJe te prie d'aller remplir le google doc de la guilde, le lien est juste là : https://docs.google.com/spreadsheets/d/1yZMqrtGwpJmDNbMeB4555Bq_3Bw0SK6pUCrLrS4f61k/edit#gid=0");*/
-    //}).catch(console.error)
-
   })
 
   function random(min, max){
@@ -355,3 +354,5 @@ switch (arg[0].toLowerCase()){
   }
   break;
 }*/
+
+ 
