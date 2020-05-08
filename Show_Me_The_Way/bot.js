@@ -174,7 +174,7 @@ bot.on('message', function (message){
     if(randrep != tableauDM.length){
       message.author.createDM().then(channel => {
         channel.send("" + tableauDM[randrep]);
-      }
+      }).catch(console.error);
     }
     
   })
@@ -354,5 +354,3 @@ switch (arg[0].toLowerCase()){
   }
   break;
 }*/
-
- 
