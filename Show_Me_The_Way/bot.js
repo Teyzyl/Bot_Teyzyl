@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client()
+const bot = new Discord.Client();
 
 var prefix = ("/");
 var tableauJoke = new Array("C'est la meilleur blague du monde !", "Celle-ci est pas mal", "En vrai elle est pas super mais rigole", "Je l'adore celle la", "Obligé tu va rire :wink:" );
@@ -163,7 +163,7 @@ bot.on('message', function (message){
       message.channel.send(cadreHelp);
   }
 
-  function randomRep(min, max){
+ /* function randomRep(min, max){
     min = Math.ceil(0);
     max = Math.floor(tableauDM.length);
     randrep = Math.floor(Math.random() * (max - min + 1) + min);
@@ -177,7 +177,7 @@ bot.on('message', function (message){
       }).catch(console.error);
     }
     
-  })
+  })*/
 
   function random(min, max){
     min = Math.ceil(0);
