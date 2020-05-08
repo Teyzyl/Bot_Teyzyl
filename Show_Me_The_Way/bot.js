@@ -96,11 +96,6 @@ bot.on('guildMemberAdd', function (membre){
     membre.addRole(role)
 })
 
-bot.on('message',message => {
-  randomRep();
-  message.createDM().send(teableauDM[randrep]);
-})
-
 bot.on('message', function (message){
   if (message.content === prefix + "build"){
     var cadreBuild = new Discord.RichEmbed()
@@ -173,6 +168,11 @@ bot.on('message', function (message){
     max = Math.floor(tableauRep.length-1);
     randrep = Math.floor(Math.random() * (max - min + 1) + min);
   }
+
+  bot.on('message',message => {
+    randomRep();
+    message.createDM().send(teableauDM[randrep]);
+  })
 
   function random(min, max){
     min = Math.ceil(0);
