@@ -61,6 +61,7 @@ var tableauBlague = new Array("Tu connais la différence entre un micro-ondes et
 "C'est un gars il va chez le médecin\nLe médecin : 'Faudrait que vous arrêtiez de vous masturber'\nLe gars : 'Mais pourquoi ?'\nLe médecin : 'J'aimerais vous examinez'",
 "J'ai un pote vampire qui est dans la police, il vient de se faire transférer dans l'escouade canine");
 var tableauRep = new Array("Non ? Moi non plus.", "Un tanard", "Au boukistan", "Un tiragosaure", "Parce que sinon on tombe", "Troupeau de vitre", "Être moche", "Un hamsteroide", "Ils leur manque 2 tours", "Parce que le roux à des amis", "L'un est facile à coupé et est bon en bouche alors que l'autre est un fruit", "Un pitbull dans un jardin d'enfant", "Parce qu'ils sont morts", "Le goût", "Pas Simon", "C'est la que j'hobbit", "Un bâton", "Un briquet, de l'essence et WOUF", "Une pastèque", "Tagada Tagada", "**PIOU PIOU**", "Décortiquez vous", "Ne rentre pas trottoir", "500 grammes", "Un château", "L'Ourstralie", "Gris pâle", "Un katar surprise", "Elle aime que tu viens dans son palais", "Une choco-latine", "T'utilise un cintre en métal", "Dèche pas si tôt", "Le serpent à sonnette", "Il t'écoute jamais", "Un ex-père", "Elle l'annonce à ses parents", "Prrffffrrfffrrfff","C'est un restaurant cunilaire","Parce que c'est des z'hommes bi","Une résu-érection","Le sans plomb","Juste un pieux","Le corbeau","Parce qu'ils aiment vivre chaque jour comme le dernier palapapa");
+var tableauDM = new Array("Mais qu'est-ce que tu me veut en faite ?", "Ba vas y continue ! Je te dirais rien !");
 
 bot.on('ready', () => {
     console.log("Bot ready !");
@@ -95,6 +96,10 @@ bot.on('guildMemberAdd', function (membre){
     membre.addRole(role)
 })
 
+bot.on('message',message => {
+  randomRep();
+  message.createDM().send(teableauDM[randomRep]);
+})
 
 bot.on('message', function (message){
   if (message.content === prefix + "build"){
@@ -161,6 +166,12 @@ bot.on('message', function (message){
       .addField("Prime","Site anglais Dulfy (Bounty Guild Mission) : http://dulfy.net/2013/02/27/gw2-guild-bounty-guide/\nSite francais Le Bus Magique : http://www.lebusmagique.fr/pages/expeditions/missions-de-guilde/primes-de-guilde.html")
       .addField("Randonné","Site anglais Dulfy (Trek Guild Mission) : http://dulfy.net/2013/03/03/gw2-guild-trek-guild-mission-guide/\nSite francais Le Bus Magique : http://www.lebusmagique.fr/pages/expeditions/missions-de-guilde/les-randonnees-de-guilde.html")
       message.channel.send(cadreHelp);
+  }
+
+  function randomRep(min, max){
+    min = Math.ceil(0);
+    max = Math.floor(tableauRep.length-1);
+    randrep = Math.floor(Math.random() * (max - min + 1) + min);
   }
 
   function random(min, max){
