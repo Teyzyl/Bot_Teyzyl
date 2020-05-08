@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const bot = new Discord.Client()
 
 var prefix = ("/");
 var tableauJoke = new Array("C'est la meilleur blague du monde !", "Celle-ci est pas mal", "En vrai elle est pas super mais rigole", "Je l'adore celle la", "Obligé tu va rire :wink:" );
